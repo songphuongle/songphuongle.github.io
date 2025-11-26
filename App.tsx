@@ -807,6 +807,7 @@ const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Set dark mode immediately to prevent flash
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -831,6 +832,15 @@ const App: React.FC = () => {
       clearTimeout(loadTimer);
     };
   }, []);
+
+  // Ensure dark class is applied when isDark changes
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
 
   const toggleTheme = () => {
     setIsDark(prev => {

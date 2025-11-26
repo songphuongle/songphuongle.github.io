@@ -17,35 +17,96 @@
 }
 
 /* Custom utility classes for theme colors */
-.bg-lightPrimary { background-color: var(--color-light-primary); }
-.bg-darkPrimary { background-color: var(--color-dark-primary); }
-.bg-lightSecondary { background-color: var(--color-light-secondary); }
-.bg-darkSecondary { background-color: var(--color-dark-secondary); }
-.bg-lightAccent { background-color: var(--color-light-accent); }
-.bg-darkAccent { background-color: var(--color-dark-accent); }
+.bg-lightPrimary { 
+  background-color: var(--color-light-primary); 
+}
+.bg-darkPrimary { 
+  background-color: var(--color-dark-primary); 
+}
+.bg-lightSecondary { 
+  background-color: var(--color-light-secondary); 
+}
+.bg-darkSecondary { 
+  background-color: var(--color-dark-secondary); 
+}
+.bg-lightAccent { 
+  background-color: var(--color-light-accent); 
+}
+.bg-darkAccent { 
+  background-color: var(--color-dark-accent); 
+}
 
-.text-lightTextPrimary { color: var(--color-light-text-primary); }
-.text-darkTextPrimary { color: var(--color-dark-text-primary); }
-.text-lightTextSecondary { color: var(--color-light-text-secondary); }
-.text-darkTextSecondary { color: var(--color-dark-text-secondary); }
+.text-lightTextPrimary { 
+  color: var(--color-light-text-primary); 
+}
+.text-darkTextPrimary { 
+  color: var(--color-dark-text-primary); 
+}
+.text-lightTextSecondary { 
+  color: var(--color-light-text-secondary); 
+}
+.text-darkTextSecondary { 
+  color: var(--color-dark-text-secondary); 
+}
 
-.text-lightAccent { color: var(--color-light-accent); }
-.text-darkAccent { color: var(--color-dark-accent); }
+.text-lightAccent { 
+  color: var(--color-light-accent); 
+}
+.text-darkAccent { 
+  color: var(--color-dark-accent); 
+}
 
-.dark .bg-lightPrimary { background-color: var(--color-dark-primary); }
-.dark .bg-darkPrimary { background-color: var(--color-dark-primary); }
-.dark .bg-lightSecondary { background-color: var(--color-dark-secondary); }
-.dark .bg-darkSecondary { background-color: var(--color-dark-secondary); }
-.dark .bg-lightAccent { background-color: var(--color-dark-accent); }
-.dark .bg-darkAccent { background-color: var(--color-dark-accent); }
+/* Dark mode overrides - when html has .dark class */
+html.dark .bg-lightPrimary,
+.dark .bg-lightPrimary { 
+  background-color: var(--color-dark-primary) !important; 
+}
+html.dark .bg-darkPrimary,
+.dark .bg-darkPrimary { 
+  background-color: var(--color-dark-primary) !important; 
+}
+html.dark .bg-lightSecondary,
+.dark .bg-lightSecondary { 
+  background-color: var(--color-dark-secondary) !important; 
+}
+html.dark .bg-darkSecondary,
+.dark .bg-darkSecondary { 
+  background-color: var(--color-dark-secondary) !important; 
+}
+html.dark .bg-lightAccent,
+.dark .bg-lightAccent { 
+  background-color: var(--color-dark-accent) !important; 
+}
+html.dark .bg-darkAccent,
+.dark .bg-darkAccent { 
+  background-color: var(--color-dark-accent) !important; 
+}
 
-.dark .text-lightTextPrimary { color: var(--color-dark-text-primary); }
-.dark .text-darkTextPrimary { color: var(--color-dark-text-primary); }
-.dark .text-lightTextSecondary { color: var(--color-dark-text-secondary); }
-.dark .text-darkTextSecondary { color: var(--color-dark-text-secondary); }
+html.dark .text-lightTextPrimary,
+.dark .text-lightTextPrimary { 
+  color: var(--color-dark-text-primary) !important; 
+}
+html.dark .text-darkTextPrimary,
+.dark .text-darkTextPrimary { 
+  color: var(--color-dark-text-primary) !important; 
+}
+html.dark .text-lightTextSecondary,
+.dark .text-lightTextSecondary { 
+  color: var(--color-dark-text-secondary) !important; 
+}
+html.dark .text-darkTextSecondary,
+.dark .text-darkTextSecondary { 
+  color: var(--color-dark-text-secondary) !important; 
+}
 
-.dark .text-lightAccent { color: var(--color-dark-accent); }
-.dark .text-darkAccent { color: var(--color-dark-accent); }
+html.dark .text-lightAccent,
+.dark .text-lightAccent { 
+  color: var(--color-dark-accent) !important; 
+}
+html.dark .text-darkAccent,
+.dark .text-darkAccent { 
+  color: var(--color-dark-accent) !important; 
+}
 
 @keyframes blob {
   0% { transform: translate(0px, 0px) scale(1); }
