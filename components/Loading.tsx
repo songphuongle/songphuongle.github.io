@@ -68,15 +68,15 @@ const Loading: React.FC<LoadingProps> = ({ isDark = true }) => {
         {/* Loading text */}
         <div className="text-center">
           <h2 className={`text-2xl font-bold mb-2 ${
-            isDark ? 'text-white' : 'text-gray-900'
+            isDark ? 'text-darkTextPrimary' : 'text-lightTextPrimary'
           }`}>
             Loading
             <span className="inline-block w-6 text-left">{dotString}</span>
           </h2>
           <p className={`text-sm font-medium ${
             isDark
-              ? 'text-gray-400'
-              : 'text-gray-600'
+              ? 'text-darkTextSecondary'
+              : 'text-lightTextSecondary'
           }`}>
             Preparing your portfolio experience
           </p>
@@ -85,8 +85,8 @@ const Loading: React.FC<LoadingProps> = ({ isDark = true }) => {
         {/* Bottom progress indicator */}
         <div className={`w-48 h-1 rounded-full overflow-hidden ${
           isDark
-            ? 'bg-gray-800'
-            : 'bg-gray-200'
+            ? 'bg-darkSecondary'
+            : 'bg-lightSecondary'
         }`}>
           <div className={`h-full w-full rounded-full bg-gradient-to-r ${
             isDark
