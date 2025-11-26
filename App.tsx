@@ -139,7 +139,7 @@ const Navbar: React.FC<{ isDark: boolean; toggleTheme: () => void }> = ({ isDark
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#hero" className="text-2xl font-heading font-bold dark:text-white text-gray-900 flex items-center gap-2 group">
           <div className="relative">
-             <img src="public/logo/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
+             <img src="/logo/logo.png" alt="Logo" className="w-8 h-8 object-contain" />
           </div>
           <span>Le Tran <span className="text-lightAccent dark:text-darkAccent">Song Phuong</span></span>
         </a>
@@ -252,7 +252,7 @@ const Hero: React.FC<{ isDark: boolean }> = ({ isDark }) => {
 
             <div className="absolute inset-4 rounded-full overflow-hidden border-4 border-white dark:border-darkSecondary shadow-2xl z-10 bg-darkSecondary">
               <img 
-                  src="public\avata\avt.png" 
+                  src="/avata/avt.png" 
                   alt="Profile" 
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -787,7 +787,7 @@ const Footer: React.FC = () => (
       <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <h4 className="font-bold text-lg dark:text-white mb-2 flex items-center justify-center md:justify-start gap-2">
-            <img src="public/logo/logo.png" alt="Logo" className="w-5 h-5 object-contain" />
+            <img src="/logo/logo.png" alt="Logo" className="w-5 h-5 object-contain" />
             Le Tran Song Phuong
           </h4>
           <p className="text-sm text-gray-500">© 2025. Designed with <span className="text-red-500">♥</span> for Innovation.</p>

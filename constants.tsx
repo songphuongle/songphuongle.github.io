@@ -105,7 +105,7 @@ export const PROJECTS: Project[] = [
     solution: "Built ensemble of specialized models: EfficientNetB3 (95.5% acc, 89.2% F1), YAMNet audio (85.2% acc, 84.1% F1), YOLOv11 detection (F1 0.73), CLIP with Gemini for query optimization (top-5 accuracy 93%+). Integrated Three.js AR 3D, Zoobot with Gemini Flash 2.5 for context analysis (94.5% Context Precision).",
     impact: "Achieved high accuracy across multiple modalities. Demonstrated ability to integrate cutting-edge models and APIs for practical conservation applications.",
     tags: ["EfficientNetB3", "YOLOv11", "YAMNet", "CLIP", "Zoobot", "Gemini", "Three.js", "AR"],
-    image: "public/projects/p1.png",
+    image: "/projects/p1.png",
     links: { 
       demo: "#", 
       video: "#"
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     solution: "Implemented YOLOv11/v12 detection models with OpenCV for real-time inference streaming via Flask. Achieved F1 score 0.75. Integrated flask-mail for instant alert notifications when smoke/fire is detected.",
     impact: "Successfully demonstrated practical computer vision deployment with real-time performance. Learned production alert systems and automated notification workflows.",
     tags: ["YOLOv11", "Flask", "Flask-Mail", "OpenCV", "Real-time Detection"],
-    image: "public/projects/p2.png",
+    image: "/projects/p2.png",
     links: { 
       video: "#"
     }
@@ -145,7 +145,7 @@ export const PROJECTS: Project[] = [
     solution: "Implemented action recognition deep learning model optimized for edge device deployment. Focused on efficient inference without sacrificing accuracy.",
     impact: "Demonstrated understanding of edge AI optimization trade-offs and real-time video processing. Applicable to public safety systems.",
     tags: ["Deep Learning", "Computer Vision", "Edge AI", "Video Processing"],
-    image: "public/projects/p4.png",
+    image: "/projects/p4.png",
     links: { 
       video: "#",
       github: "#" 
@@ -159,7 +159,7 @@ export const PROJECTS: Project[] = [
     solution: "Trained YOLOv11 for multi-class waste detection across 10 categories (Organic, Plastic, Metal, Paper, Glass, etc). Achieved F1 score 0.93 with FastAPI backend for real-time predictions.",
     impact: "High classification accuracy demonstrates practical application of object detection for environmental sustainability and smart city initiatives.",
     tags: ["YOLOv11", "FastAPI", "Computer Vision", "10-Class Detection"],
-    image: "public/projects/p5.png",
+    image: "/projects/p5.png",
     links: { 
       video: "#",
       github: "#" 
@@ -187,7 +187,7 @@ export const PROJECTS: Project[] = [
     solution: "Implemented pure Adaface model for facial feature extraction and similarity matching. Achieved high accuracy with Adaface's advanced face representation.",
     impact: "Practical biometric authentication system. Learned about state-of-the-art face recognition architectures and their applications in security systems.",
     tags: ["Computer Vision", "Adaface", "Face Recognition", "Biometrics"],
-    image: "public/projects/p7.png",
+    image: "/projects/p7.png",
     links: { 
       video: "#",
       github: "#" 
@@ -201,7 +201,7 @@ export const PROJECTS: Project[] = [
     solution: "Built end-to-end pipeline: Input YouTube link → auto-crawl comments via tool + speech-to-text using Wav2Vec → classify using LSTM with GloVe and Word2Vec embeddings. Achieved LSTM_GloVe accuracy 89.79% and LSTM_Word2Vec 88.98%.",
     impact: "Successfully automated toxic content detection from multiple sources. Demonstrated multi-modal NLP and practical content moderation solutions.",
     tags: ["NLP", "LSTM", "Wav2Vec", "GloVe", "Word2Vec", "YouTube", "Multi-modal"],
-    image: "public/projects/p8.png",
+    image: "/projects/p8.png",
     links: { 
       video: "#",
       github: "#" 
@@ -215,7 +215,7 @@ export const PROJECTS: Project[] = [
     solution: "Implemented and rigorously compared three ML algorithms on 20-class dataset: KNN (98.1% acc, 97.89% F1), Naive Bayes (99.5% acc, 99.4% F1), Logistic Regression (93.78% acc, 94% F1). Selected Naive Bayes as best performer.",
     impact: "Achieved 99.5% accuracy. Demonstrated systematic model comparison methodology and practical agricultural ML application.",
     tags: ["KNN", "Naive Bayes", "Logistic Regression", "Model Evaluation", "20-Class"],
-    image: "public/projects/p9.png",
+    image: "/projects/p9.png",
     links: { 
       video: "#",
       github: "#" 
@@ -229,7 +229,7 @@ export const PROJECTS: Project[] = [
     solution: "Integrated OpenWeather API to fetch regional weather data, processed with Gemini Flash 2.5 for intelligent analysis and personalized recommendations. Built Flask backend for seamless API integration.",
     impact: "Demonstrated API integration and LLM utilization for practical real-world applications. Showed ability to combine multiple services for enhanced user experience.",
     tags: ["Flask", "OpenWeather API", "Gemini", "Weather Analysis", "Backend"],
-    image: "public/projects/p16.png",
+    image: "/projects/p16.png",
     links: { 
       video: "#",
       github: "#" 
@@ -243,7 +243,7 @@ export const PROJECTS: Project[] = [
     solution: "Built matching game with matching animal cards. Features progressive difficulty: Level 1 (8 cards), Level 2 (12 cards), Level 3 (16 cards) with adaptive time limits. Developed with pure HTML/CSS/JavaScript.",
     impact: "Practical educational application combining gamification with learning. Demonstrated ability to create engaging interactive web experiences.",
     tags: ["HTML/CSS", "JavaScript", "Educational"],
-    image: "public/projects/p17.png",
+    image: "/projects/p17.png",
     links: { 
       video: "#",
       github: "#" 
@@ -257,7 +257,7 @@ export const PROJECTS: Project[] = [
     solution: "Built with ASP.NET backend and HTML/CSS/JavaScript frontend. Implemented shopping cart, product search, user authentication, and admin dashboard.",
     impact: "Gained full-stack web development experience. Demonstrated ability to build complete business applications.",
     tags: ["ASP.NET", "HTML/CSS", "JavaScript", "E-commerce", "Full-stack"],
-    image: "public/projects/p10.png",
+    image: "/projects/p10.png",
     links: { 
       video: "#",
       github: "#" 
@@ -271,7 +271,7 @@ export const PROJECTS: Project[] = [
     solution: "Developed Java-based Android app with full e-commerce features: product browsing, shopping cart, order management, and push notifications.",
     impact: "Demonstrated mobile development skills and ability to create user-friendly applications.",
     tags: ["Java", "Android", "Mobile Development", "E-commerce"],
-    image: "public/projects/p11.png",
+    image: "/projects/p11.png",
     links: { 
       video: "#",
       github: "#" 
@@ -285,7 +285,7 @@ export const PROJECTS: Project[] = [
     solution: "Built interactive HTML/CSS/JavaScript visualization showing backtracking algorithm in real-time with color-coded board states and step-by-step execution.",
     impact: "Created educational tool demonstrating problem-solving and algorithm visualization skills.",
     tags: ["HTML/CSS", "JavaScript", "Algorithms", "Visualization"],
-    image: "public/projects/p12.png",
+    image: "/projects/p12.png",
     links: { 
       video: "#",
       github: "#" 
@@ -299,7 +299,7 @@ export const PROJECTS: Project[] = [
     solution: "Developed C# Winform desktop application with comprehensive features: order management, billing system, real-time inventory tracking, and sales reporting.",
     impact: "Demonstrated business software development and ability to create efficient operational tools.",
     tags: ["C#", "Winform", "Desktop Application", "Management", "Inventory"],
-    image: "public/projects/p13.png",
+    image: "/projects/p13.png",
     links: { 
       video: "#",
       github: "#" 
@@ -313,7 +313,7 @@ export const PROJECTS: Project[] = [
     solution: "Built blog platform using Socket.js programming for real-time bidirectional communication: instant post updates, live comments, and user notifications.",
     impact: "Demonstrated real-time web communication skills and understanding of WebSocket technologies.",
     tags: ["HTML/CSS", "JavaScript", "Socket.js", "Real-time", "Web Development"],
-    image: "public/projects/p14.png",
+    image: "/projects/p14.png",
     links: { 
       video: "#",
       github: "#" 
@@ -327,7 +327,7 @@ export const PROJECTS: Project[] = [
     solution: "Created interactive web tool with visual periodic table layout, detailed element information cards, and search/filter functionality for quick property lookup.",
     impact: "Developed educational web tool demonstrating UI/UX design and frontend interactivity skills.",
     tags: ["HTML/CSS", "JavaScript", "Education", "Interactive", "Web Tool"],
-    image: "public/projects/p15.png",
+    image: "/projects/p15.png",
     links: { 
       video: "#",
       github: "#" 
@@ -342,7 +342,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Coursera (Stanford)", 
     iconName: "brain",
     date: "2022",
-    image: "public/certificates/c1.png"
+    image: "/certificates/c1.png"
   },
   { 
     id: "c2", 
@@ -350,7 +350,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Coursera (deeplearning.ai)", 
     iconName: "cpu",
     date: "2022",
-    image: "public/certificates/c2.png"
+    image: "/certificates/c2.png"
   },
   { 
     id: "c3", 
@@ -358,7 +358,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Coursera (Univ. of Michigan)", 
     iconName: "code",
     date: "2022",
-    image: "public/certificates/c3.png"
+    image: "/certificates/c3.png"
   },
   { 
     id: "c4", 
@@ -366,7 +366,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: "Coursera (Univ. of Michigan)", 
     iconName: "code",
     date: "2022",
-    image: "public/certificates/c4.png"
+    image: "/certificates/c4.png"
   },
   { 
     id: "c5", 
@@ -375,7 +375,7 @@ export const CERTIFICATIONS: Certification[] = [
     iconName: "file-text",
     date: "2025",
     score: "1000/1000",
-    image: "public/certificates/c5.png"
+    image: "/certificates/c5.png"
   },
   { 
     id: "c6", 
@@ -384,7 +384,7 @@ export const CERTIFICATIONS: Certification[] = [
     iconName: "file-spreadsheet",
     date: "2025",
     score: "1000/1000",
-    image: "public/certificates/c6.png"
+    image: "/certificates/c6.png"
   },
   { 
     id: "c7", 
@@ -393,7 +393,7 @@ export const CERTIFICATIONS: Certification[] = [
     iconName: "presentation",
     date: "2025",
     score: "1000/1000",
-    image: "public/certificates/c7.png"
+    image: "/certificates/c7.png"
   },
   { 
     id: "c8", 
