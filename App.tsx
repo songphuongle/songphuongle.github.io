@@ -201,10 +201,23 @@ const Hero: React.FC<{ isDark: boolean }> = ({ isDark }) => {
                 </span>
                 Open to Opportunities
              </div>
-            <h1 className="text-5xl lg:text-7xl font-heading font-bold mb-6 leading-tight text-lightTextPrimary dark:text-darkTextPrimary drop-shadow-sm">
-              Hello, I'm <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-lightAccent to-purple-600 dark:from-darkAccent dark:to-purple-500">
-                AI Engineer
+            <h1 className="text-5xl lg:text-7xl font-heading font-bold mb-6 leading-tight drop-shadow-sm">
+              <span className="relative inline-block">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-lightAccent via-purple-600 via-pink-500 to-lightAccent dark:from-darkAccent dark:via-purple-500 dark:via-pink-400 dark:to-darkAccent bg-[length:200%_auto] animate-shimmer-gradient">
+                  Hello, I'm
+                </span>
+                <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-lightAccent via-purple-600 via-pink-500 to-lightAccent dark:from-darkAccent dark:via-purple-500 dark:via-pink-400 dark:to-darkAccent bg-[length:200%_auto] animate-shimmer-gradient blur-sm opacity-50">
+                  Hello, I'm
+                </span>
+              </span>
+              <br />
+              <span className="relative inline-block mt-2">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-lightAccent via-purple-600 via-pink-500 to-lightAccent dark:from-darkAccent dark:via-purple-500 dark:via-pink-400 dark:to-darkAccent bg-[length:200%_auto] animate-shimmer-gradient" style={{ animationDelay: '0.5s' }}>
+                  AI Engineer
+                </span>
+                <span className="absolute inset-0 text-transparent bg-clip-text bg-gradient-to-r from-lightAccent via-purple-600 via-pink-500 to-lightAccent dark:from-darkAccent dark:via-purple-500 dark:via-pink-400 dark:to-darkAccent bg-[length:200%_auto] animate-shimmer-gradient blur-sm opacity-50" style={{ animationDelay: '0.5s' }}>
+                  AI Engineer
+                </span>
               </span>
             </h1>
             <h2 className="text-xl lg:text-2xl font-medium text-lightTextSecondary dark:text-darkTextSecondary mb-8 h-8">
@@ -215,15 +228,20 @@ const Hero: React.FC<{ isDark: boolean }> = ({ isDark }) => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <a href="#projects" className="relative px-8 py-3.5 rounded-full bg-gradient-to-r from-lightAccent to-purple-600 dark:from-darkAccent dark:to-purple-500 text-white dark:text-darkPrimary font-bold overflow-hidden group shadow-lg hover:shadow-lightAccent/50 dark:hover:shadow-darkAccent/50 transition-all transform hover:-translate-y-1 z-20">
-                 <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/30 to-transparent z-10"></div>
-                 <span className="relative z-20">Explore Work</span>
+              <a href="#projects" className="relative px-8 py-3.5 rounded-full bg-gradient-to-r from-lightAccent via-purple-600 to-pink-500 dark:from-darkAccent dark:via-purple-500 dark:to-pink-400 text-white dark:text-darkPrimary font-bold overflow-hidden group shadow-lg hover:shadow-2xl hover:shadow-lightAccent/50 dark:hover:shadow-darkAccent/50 transition-all transform hover:-translate-y-1 z-20">
+                 <div className="absolute inset-0 bg-gradient-to-r from-lightAccent via-purple-600 to-pink-500 dark:from-darkAccent dark:via-purple-500 dark:to-pink-400 bg-[length:200%_auto] animate-shimmer-gradient opacity-90"></div>
+                 <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/40 to-transparent z-10"></div>
+                 <span className="relative z-20 drop-shadow-lg">Explore Work</span>
               </a>
               
-              <button className="relative px-8 py-3.5 rounded-full border border-gray-300 dark:border-gray-700 bg-lightPrimary/50 dark:bg-white/5 hover:bg-lightSecondary dark:hover:bg-white/10 text-lightTextPrimary dark:text-darkTextPrimary font-semibold transition-all flex items-center gap-2 group backdrop-blur-sm z-20 overflow-hidden">
-                <div className="absolute inset-0 -translate-x-full group-hover:animate-shimmer bg-gradient-to-r from-transparent via-white/10 to-transparent z-10"></div>
-                <Download size={18} className="group-hover:animate-bounce relative z-20" /> 
-                <span className="relative z-20">Download CV</span>
+              <button className="relative px-8 py-3.5 rounded-full border-2 border-transparent bg-gradient-to-r from-lightAccent via-purple-600 to-pink-500 dark:from-darkAccent dark:via-purple-500 dark:to-pink-400 bg-clip-padding group backdrop-blur-sm z-20 overflow-hidden">
+                <div className="absolute inset-[2px] rounded-full bg-lightPrimary dark:bg-darkPrimary z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-lightAccent via-purple-600 to-pink-500 dark:from-darkAccent dark:via-purple-500 dark:to-pink-400 bg-[length:200%_auto] animate-shimmer-gradient opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent z-10"></div>
+                <div className="relative z-20 flex items-center gap-2 text-lightTextPrimary dark:text-darkTextPrimary font-semibold">
+                  <Download size={18} className="group-hover:animate-bounce" /> 
+                  <span>Download CV</span>
+                </div>
               </button>
             </div>
 
@@ -258,9 +276,42 @@ const Hero: React.FC<{ isDark: boolean }> = ({ isDark }) => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               
-              <div className="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-[-25deg] animate-shine pointer-events-none z-20"></div>
+              {/* Shine effect - sweeping light */}
+              <div className="absolute top-0 -left-[100%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/60 to-transparent skew-x-[-25deg] animate-shine pointer-events-none z-30"></div>
               
-              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+              {/* Sparkles effect */}
+              <div className="absolute inset-0 pointer-events-none z-30">
+                {[...Array(8)].map((_, i) => (
+                  <div
+                    key={i}
+                    className="absolute w-1 h-1 bg-white rounded-full animate-ping"
+                    style={{
+                      left: `${15 + (i * 12)}%`,
+                      top: `${10 + (i * 11)}%`,
+                      animationDelay: `${i * 0.3}s`,
+                      animationDuration: `${2 + (i % 3)}s`,
+                    }}
+                  ></div>
+                ))}
+                {[...Array(6)].map((_, i) => (
+                  <div
+                    key={`sparkle-${i}`}
+                    className="absolute w-1.5 h-1.5 bg-gradient-to-r from-lightAccent to-purple-500 dark:from-darkAccent dark:to-purple-400 rounded-full animate-pulse"
+                    style={{
+                      left: `${20 + (i * 15)}%`,
+                      top: `${15 + (i * 12)}%`,
+                      animationDelay: `${i * 0.4}s`,
+                      animationDuration: `${1.5 + (i % 2) * 0.5}s`,
+                    }}
+                  ></div>
+                ))}
+              </div>
+              
+              {/* Holographic overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-lightAccent/10 via-transparent via-purple-500/10 to-transparent dark:from-darkAccent/10 dark:via-transparent dark:via-purple-400/10 pointer-events-none z-25 mix-blend-overlay"></div>
+              
+              {/* Grain texture */}
+              <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay z-20"></div>
             </div>
             
             <div className="absolute top-10 right-0 lg:-right-4 bg-lightPrimary dark:bg-darkSecondary p-3 rounded-xl shadow-xl border border-gray-200 dark:border-gray-700 animate-float-slow z-20">
@@ -506,7 +557,7 @@ const Projects: React.FC = () => {
 };
 
 const ExperienceAndEducation: React.FC = () => (
-    <section id="experience" className="py-24 overflow-hidden relative bg-white dark:bg-darkPrimary">
+    <section id="experience" className="py-24 overflow-hidden relative bg-lightPrimary dark:bg-darkPrimary">
         <div className="container mx-auto px-6">
             <FadeIn>
               <div className="text-center mb-16">
